@@ -40,7 +40,7 @@ for ($i = 0; $i < $total_rows; $i++) {
         echo '<url>' . PHP_EOL;
         echo '<loc>' . htmlspecialchars($loc, ENT_XML1, 'UTF-8') . '</loc>' . PHP_EOL;
         echo '<lastmod>' . $current_date . '</lastmod>' . PHP_EOL;
-        echo '<priority>0.80</priority>' . PHP_EOL;
+        echo '<priority>1.00</priority>' . PHP_EOL;
         echo '</url>' . PHP_EOL;
     }
 }
