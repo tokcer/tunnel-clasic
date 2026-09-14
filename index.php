@@ -79,4 +79,8 @@ $BRANDS = trim($brand_A . " x " . $brand_B . " " . $selected_pelengkap);
 
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
 $fullUrl = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
+$slug_A = strtolower(str_replace(' ', '-', trim($brand_A)));
+$slug_B = strtolower(str_replace(' ', '-', trim($brand_B)));
+$ampUrl = "https://yuk-mari.online/" . $slug_A . "-" . $slug_B;
 ?>
